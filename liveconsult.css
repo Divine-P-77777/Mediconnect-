@@ -1,0 +1,150 @@
+
+ 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4be2ec;
+   
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 33px;
+    margin-left: 67px;
+    width: 40px;
+}
+
+.logo-text {
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+
+
+       
+nav ul li a {
+        
+        position: relative;
+        
+       
+    }
+
+    
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 16px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+ 
+    border-radius: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+fieldset {
+    flex: 1 0 45%; /* Adjust as needed */
+    margin-bottom: 20px;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: calc(100% - 20px); /* Adjust padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 104px; /* Adjust as needed */
+    padding: 10px;
+    background-color: #4be2ec;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0px auto;
+}
+
+button:hover {
+
+        background-color: #f3f3f3;
+        border:solid rgb(40, 40, 40) 1px;
+        color: black;
+    
+    
+}
+
+.disclaimer {
+    border: 1px solid #ccc;
+    padding: 9px;
+    margin-bottom: 37px;
+    background-color: #4be2ec;
+    border-radius: 14px;
+    color: black;
+}
+.red{
+color: red;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+    .approval {
+        margin: 30px auto;
+        width: fit-content;
+        text-align: center;
+        transform: translate3d(-50%);
+        color: #00c723;
+        padding: 8px 0px;
+    }
+  
+

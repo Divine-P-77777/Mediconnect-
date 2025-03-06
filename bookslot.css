@@ -1,0 +1,140 @@
+
+nav ul li a {
+        
+    position: relative;
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form  {
+ 
+       border: 1px solid #ccc;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 20px;
+
+       border-radius: 22px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 30px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: none;
+}
+
+legend {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: calc(100% - 20px); /* Adjust padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* button {
+    align-items: center;
+    width: 20%; 
+    padding: 10px;
+    background-color: #4be2ec;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+    margin:auto auto;
+} */
+ .s1{
+    font-size: 1rem;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 10px auto;
+    background-color: #4be2ec;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 9px 33px;
+ }
+
+button:hover {
+    background-color: #f3f3f3;
+    border:solid rgb(40, 40, 40) 1px;
+    color: black;
+}
+
+.approval {
+    margin: 30px auto;
+    width: fit-content;
+    text-align: center;
+    transform: translate3d(-50%);
+    color: #00c723;
+    padding: 8px 0px;
+}
+
+
+
+.table-container {
+    overflow-y: auto;
+    max-height: 400px;
+    position: relative;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container thead th {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.available-date {
+    background-color: skyblue;
+    cursor: pointer;
+}
+.unavailable-date {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+

@@ -1,0 +1,159 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+
+  border-radius: 22px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+fieldset {
+  border: none;
+  flex: 1 0 100%; /* Adjust to full width */
+  display: inline;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  display: inline;
+  cursor: pointer;
+  width: calc(50% - 10px); /* Adjust as needed */
+  padding: 10px;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Adjust font size */
+}
+
+button {
+  width: 104px;
+  padding: 10px;
+  background-color: #4be2ec;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 14px auto;
+}
+
+.results-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.results-table .no-document {
+  color: #999;
+}
+
+button.download-btn {
+  width: fit-content;
+  text-align: center;
+  padding: 8px 12px;
+  background-color: #4be2ec;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover {
+    background-color: #f3f3f3;
+    border:solid rgb(40, 40, 40) 1px;
+    color: black;
+}
+
+.results-table a {
+  border: solid #4be2ec 1px;
+  padding: 3px 10px;
+  width: fit-content;
+  text-decoration: none;
+  width: 40px;
+  text-align: center;
+  font-size: 0.9em;
+  background-color: #4be2ec;
+  color: rgb(0, 0, 0);
+
+  border-radius: 22px;
+  cursor: pointer;
+  text-decoration: none;
+} 
+.results-table a:hover {
+  background-color: #f3f3f3;
+  border:solid rgb(40, 40, 40) 1px;
+  color: black;
+
+}
+.results-table th {
+  background-color: #4be2ec;
+  text-align: center;
+}
+
+.results-table td {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.results-table {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-height: 300px;
+  overflow-y: auto;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  padding: 10px;
+}
+nav ul li a {
+        
+  position: relative;
+  
+ 
+}nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
